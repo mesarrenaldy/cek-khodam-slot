@@ -2,7 +2,7 @@ document.getElementById('khodamform').addEventListener('submit', function(e){
     e.preventDefault();
     const nama = document.getElementById('namaLengkap').value;
     const khodam = generateRandomKhodam(nama);
-    document.getElementById('hasil').innerHTML = `<p>Khodam slot <mark>${nama}</mark> hari ini adalah ${khodam}</p>`;
+    document.getElementById('hasil').innerHTML = `<p>Khodam slot <mark><span class="highlight">${nama}</span></mark> hari ini adalah <mark><span class="highlight">${khodam}</span></mark></p>`;
     document.getElementById('namaLengkap').value = "";
 });
 
