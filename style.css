@@ -31,9 +31,10 @@ button {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background: #02060e;
+    background: rgb(230, 12, 23);
     color: white;
     font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.2s;
 }
@@ -52,3 +53,24 @@ a{
     text-decoration: none;
     color: rgb(230, 12, 23);
 }
+.inline-block,audio,canvas,video {
+    display: inline-block
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+audio::-webkit-media-controls-panel{
+background-color: rgb(255, 255, 255);
+width:350px;
+}
+
+ .highlight {
+        font-weight: bold;
+        color: white;
+        background-color: rgb(230, 12, 23);
+        padding: 0.2em 0.4em;
+        border-radius: 4px;
+    }
